@@ -1,0 +1,27 @@
+/* Styles here for both the header demo animation, and any demo containers in the article */
+
+/* Header demo area */
+
+.demo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Inline example blocks */
+
+.demo-container {
+  background: #fff;
+  display: inline-block;
+  padding: 1em;
+}
+
+/* Don't forget to scale the animation to different break points */
+
+@media (max-width: 380px) {
+  .demo-container {
+    font-size: 12px;
+  }
+}
